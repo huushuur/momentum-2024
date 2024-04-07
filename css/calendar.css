@@ -1,0 +1,81 @@
+/* 달력 */
+.calendar {
+  grid-row: 17/ 32;
+  grid-column: 1 / 12;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.calendar-container__outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: auto;
+}
+
+.calendar-dateHead div {
+  background: #e31b20;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 5px;
+}
+
+.calendar-grid div {
+  padding: 1.2em;
+  font-size: 0.7em;
+  cursor: pointer;
+}
+
+.calendar-dateBoard div {
+  color: #222;
+  font-size: bold;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.calendar-noColor {
+  background-color: #eee;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 좌우 버튼 */
+.calendar-btn {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #000;
+  border-width: 2px 2px 0 0;
+  cursor: pointer;
+  position: relative;
+  top: -8px;
+}
+
+.calendar-prevDay {
+  transform: rotate(-135deg);
+}
+
+.calendar-nextDay {
+  transform: rotate(45deg);
+}
+
+.calendar-dateHead {
+  margin: 0.4em 0;
+}

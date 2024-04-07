@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Momentum App</title>
+  </head>
+  <body>
+    <header class="top-bar">
+      <form class="hidden title" id="login-form">
+        <input
+          class="login-input"
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
+        />
+        <input class="login-input" type="submit" value="Log In" />
+      </form>
+      <h1 class="title" id="greeting"></h1>
+
+      <div class="weather-clock-container">
+        <div id="weather">
+          <img id="weather-icon" />
+          <div id="weather-text">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <h2 id="clock">00:00:00</h2>
+      </div>
+    </header>
+
+    <main>
+      <section class="telephone-directory-container content">
+        <h2>Telephone Dicrtory</h2>
+        <ul class="telephone-directory">
+          <li>名前: 大谷翔平, 電話番号: 123-456-7890</li>
+          <li>名前: 遠藤航, 電話番号: 987-654-3210</li>
+          <li>名前: Bellingham, 電話番号: 456-789-0123</li>
+        </ul>
+      </section>
+      <section class="calendar content">
+        <h2>Calendar</h2>
+
+        <div class="calendar-container__outer">
+          <div class="calendar-container__inner">
+            <div class="calendar-header">
+              <div class="calendar-btn calendar-prevDay"></div>
+              <h2 class="calendar-dateTitle"></h2>
+              <div class="calendar-btn calendar-nextDay"></div>
+            </div>
+
+            <div class="calendar-date">
+              <div class="calendar-grid calendar-dateHead">
+                <div>日</div>
+                <div>月</div>
+                <div>火</div>
+                <div>水</div>
+                <div>木</div>
+                <div>金</div>
+                <div>土</div>
+              </div>
+              <div class="calendar-grid calendar-dateBoard"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="todo-list__container content">
+        <h2>To Do List</h2>
+
+        <form id="todo-form">
+          <input
+            class="todo-form__input"
+            id="todo-form__input"
+            type="text"
+            placeholder="Write a To Do and Press enter"
+            required
+          />
+          <label for="todo-form__input" class="todo-form__label"
+            >todoList</label
+          >
+        </form>
+
+        <ul id="todo-list"></ul>
+      </section>
+
+      <section class="photo content">
+        <h2>2024 Chiba Lotte Marines Players</h2>
+        <h3 class="player-no"></h3>
+
+        <div class="photo-container">
+          <div class="player-bg"></div>
+          <div class="player-detail">
+            <div class="player-detail__text"></div>
+            <div class="player-detail__text"></div>
+            <div class="player-detail__text"></div>
+          </div>
+        </div>
+      </section>
+      <section class="content" id="quote">
+        <h2>Quote</h2>
+        <span></span>
+        <span></span>
+      </section>
+      <section class="bucket-list content">
+        <h2>Bucket List</h2>
+      </section>
+    </main>
+
+    <script src="js/apikey.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/greetings.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/player.js"></script>
+  </body>
+</html>

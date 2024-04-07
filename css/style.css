@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&family=Noto+Sans+JP:wght@100..900&family=Yomogi&display=swap");
+
+@import "reset.css";
+@import "main.css";
+@import "calendar.css";
+@import "todo.css";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: calc(100%);
+}
+
+body {
+  height: 100vh;
+  color: #2e363e;
+  font-family: "Yomogi", cursive;
+  font-weight: 500;
+}
+
+.hidden {
+  display: none;
+}
