@@ -1,13 +1,14 @@
-/* 달력이외의 요소들 */
+/* 달력, todo이외의 요소들 */
 .top-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 15px;
+  height: 50px;
 }
 
 .top-bar h1 {
-  font-size: 30px;
+  font-size: 32px;
 }
 
 .weather-clock-container {
@@ -72,18 +73,18 @@ main {
   grid-column: 1 / 12;
 }
 
-.telephone-directory {
+.items {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.telephone-directory li {
+.items li {
   padding: 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-.telephone-directory li:last-child {
+.items li:last-child {
   border-bottom: none;
 }
 
@@ -95,6 +96,14 @@ main {
 #quote {
   grid-row: 19/ 24;
   grid-column: 25 / 37;
+}
+
+#quote span {
+  display: block;
+}
+
+#quote span:first-of-type {
+  margin-bottom: 10px;
 }
 
 .bucket-list {
